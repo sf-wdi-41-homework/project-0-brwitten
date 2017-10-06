@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
-// create board and initial pieces
-
+// code to create board and initial pieces
   var c = document.getElementById('racetrack');
   var ctx = c.getContext("2d");
   var car1 = ctx.fillRect(10,20,20,40);
@@ -10,12 +9,12 @@ $(document).ready(function(){
   var car2 = ctx.fillRect(10,90,20,40);
   var car2x = 10;
   var car2y = 90;
-  var car1finishTime = []; // using arrays because event timestamp for finish keeps updating
+// using arrays because event timestamp for finish keeps updating; should eventually fix
+  var car1finishTime = [];
   var car2finishTime = [];
 
 
-// move pieces with the return and D keypress
-
+// code to move pieces with the return and D keypress
   $(document).on('keypress', function(event) {
   // code to move the top object -- car1
     if (event.keyCode == 13 && car1x < 280 && car2x < 280) { // this is the return key and making sure not end of track
@@ -33,7 +32,7 @@ $(document).ready(function(){
       car1 = ctx.fillRect(car2x,car2y,20,40);
     };
 
-// Determine winner and if there was a tie
+// code to determine winner and if there was a tie
     if (car1x === 280 && car2x != 280) {
       alert("Top car wins! Hit Reset to play again.");
       car1finishTime.push(event.timeStamp);
