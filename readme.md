@@ -28,7 +28,6 @@ The goal of my racing game was to create a two-player game where each player ind
 
 ---
 
-!Screenshot (images/readme_screenshot.png)
-Format: ![Alt Text](url)
+![alt text](images/readme_screenshot.png)
 
 ##### You can see the details of this project here: https://github.com/sf-wdi-41-homework/project-0-brwitten
