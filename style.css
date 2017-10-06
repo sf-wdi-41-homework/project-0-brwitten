@@ -14,15 +14,20 @@ h3 {
   border-bottom: 2px solid #4b4f4f;
 }
 
-#instructions {
+a:link {
+  font-size: 20px;
+}
+
+#accordion {
   text-align: center;
   margin-bottom: 30px;
   font-size: 16px;
 }
 
-.entireTrack {
-  background-color: green;
-  float: right;
+#instructions {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 16px;
 }
 
 #racetrack {

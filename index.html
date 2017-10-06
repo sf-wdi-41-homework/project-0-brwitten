@@ -25,10 +25,29 @@
     <div class="container">
       <div class="jumbotron">
         <h1 class="animated lightSpeedIn">Racing Game</h1>
-          <p>Welcome to the racing game!</p>
+          <p>"The winner ain't the one with the fastest car, it's the one who refuses to lose." -Dale Earnhardt</p>
       </div>
-          <h3>instructions</h3>
-            <p id="instructions">This is a two-player game that you control from the keyboard.<br>The top player controls their car by hitting <b>'return'</b> repeatedly.<br>The bottom player controls their car by hitting <b>'d'</b> repeatedly.<br>The first player to the finish line wins!</p>
+          <!-- <h3>instructions</h3>
+            <p id="instructions">This is a two-player game that you control from the keyboard.<br>The top player controls their car by hitting <b>'return'</b> repeatedly.<br>The bottom player controls their car by hitting <b>'d'</b> repeatedly.<br>The first player to the finish line wins!</p> -->
+
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="card">
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Instructions
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-block">
+                    This is a two-player game that you control from the keyboard.<br>The top player controls their car  by hitting <b>'return'</b> repeatedly.<br>The bottom player controls their car by hitting <b>'d'</b>  repeatedly.<br>The first player to the finish line wins!
+                  </div>
+                </div>
+              </div>
+            </div>
 
         <div class="container" class="entireTrack">
           <img class="flag animated infinite bounce" src="images/start_banner.jpg" width="50">
