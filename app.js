@@ -1,5 +1,3 @@
-console.log("I'm linked!");
-
 $(document).ready(function(){
 
 // create board and initial pieces
@@ -37,25 +35,20 @@ $(document).ready(function(){
 
 // Determine winner and if there was a tie
     if (car1x === 280 && car2x != 280) {
-      alert("top car wins!");
+      alert("Top car wins! Hit Reset to play again.");
       car1finishTime.push(event.timeStamp);
       };
     if (car2x === 280 && car1x != 280) {
-      alert("bottom car wins!");
+      alert("Bottom car wins! Hit Reset to play again.");
       car2finishTime.push(event.timeStamp);
     };
     if (car1x === 280 && car2x === 280) {
       if (car1finishTime[0] > car2finishTime[0]) {
-        alert("top car wins!");
+        alert("Top car wins! Hit Reset to play again.");
       } else {
-        alert("bottom car wins!");
+        alert("Bottom car wins! Hit Reset to play again.");
       }
     }
   });
-
-
-
-// need to determine tie position
-
 
 });
