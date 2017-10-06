@@ -10,6 +10,13 @@ $(document).ready(function(){
 
   $('canvas').on('click', moveCar);
 
+  $(document).on('keypress', moveCarTest);
+
+  function moveCarTest(event) {
+    console.log("you pressed a key!")
+  }
+
+
   function moveCar(event) {
     // var id = event.currentTarget; // identifying DOM object that was clicked
     // var square = event.currentTarget.id; // storing specific ID that was clicked
