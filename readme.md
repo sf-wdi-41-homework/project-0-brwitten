@@ -1,18 +1,30 @@
 # Racing Game
 
-*Short explanation of the project (1-2 sentences) - what is the goal of the project and/or main functionality?*
+The goal of my racing game was to create a two-player game where each player independently controlled an object's speed and both objects were racing to a finish line.
 
 ## Technologies Used
 
-*What technologies did you use to develop this project? (bullet points)*
+* HTML
+* CSS
+* Javascript
+
+* Bootstrap
+* jQuery
+* Animate.css
 
 ## Existing Features
 
-*What features does your racing game have? (bullet points)*
+* Two objects move across the page when two distinct keys are struck
+* Starting and winning position are defined
+* Tie condition is handled by logging event timestamp of finish
+* Winner is alerted
+* Game can be reset
 
 ## Planned Features
 
-*What changes would you make to your project if you continue to work on it? (bullet points)*
+* Update icons to be better than just black boxes
+* Keep score of who wins which round
+* Add ability to have more than two players and select number of players
 
 ---
 
