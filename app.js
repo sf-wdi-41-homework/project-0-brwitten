@@ -8,26 +8,25 @@ $(document).ready(function(){
   var car1x = 10;
   var car1y = 10;
 
-  $('canvas').on('click', moveCar);
+  // $('canvas').on('click', moveCar);
 
-  $(document).on('keypress', moveCarTest);
+  $(document).on('keypress', function(event) {
+    if (event.keyCode == 13) {
+      console.log("you pressed a key!");
+    }
+  });
 
-  function moveCarTest(event) {
-    console.log("you pressed a key!")
-  }
-
-
-  function moveCar(event) {
-    // var id = event.currentTarget; // identifying DOM object that was clicked
-    // var square = event.currentTarget.id; // storing specific ID that was clicked
-    // console.log(event);
-    // console.log(id);
-    // console.log(square);
-    alert("hello!");
-    ctx.clearRect(0,0,800,500);
-    car1x = car1x+5;
-    car1 = ctx.fillRect(car1x,car1y,15,10);
-  }
+  // function moveCar(event) {
+  //   // var id = event.currentTarget; // identifying DOM object that was clicked
+  //   // var square = event.currentTarget.id; // storing specific ID that was clicked
+  //   // console.log(event);
+  //   // console.log(id);
+  //   // console.log(square);
+  //   alert("hello!");
+  //   ctx.clearRect(0,0,800,500);
+  //   car1x = car1x+5;
+  //   car1 = ctx.fillRect(car1x,car1y,15,10);
+  // }
 
 
 
