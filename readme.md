@@ -18,4 +18,4 @@
 
 ##### Screenshot (optional)
 
-##### Link to hosted project on GitHub pages or BitBalloon (optional)
+##### You can see the details of this project here: https://github.com/sf-wdi-41-homework/project-0-brwitten

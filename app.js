@@ -15,6 +15,7 @@ $(document).ready(function(){
   var car1finishTime = []; // using arrays because event timestamp for finish keeps updating
   var car2finishTime = [];
 
+
 // move pieces with the return and D keypress
 
   $(document).on('keypress', function(event) {

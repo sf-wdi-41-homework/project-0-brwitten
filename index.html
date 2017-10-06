@@ -24,14 +24,18 @@
 
     <div class="container">
       <div class="jumbotron">
-        <h1>Racing Game</h1>
+        <h1 class="animated lightSpeedIn">Racing Game</h1>
           <p>Welcome to the racing game!</p>
       </div>
-        <p>Instructions coming soon.</p>
+          <p id="instructions">Instructions coming soon.</p>
 
-        <canvas id="racetrack">
-        </canvas>
+        <div class="container" class="entireTrack">
+          <img class="flag" src="images/start_banner.jpg" width="50">
+          <canvas id="racetrack"></canvas>
+          <img class="flag" src="images/finish_banner.jpg" width="50">
+        </div>
 
+        <input id="resetButton" class="btn btn-default" type="button" value="Reset Game" onClick="window.location.reload()">
 
       </div>
 
