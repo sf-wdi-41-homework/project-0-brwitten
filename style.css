@@ -1,11 +1,12 @@
 body {
-  font: Aria;
+  font-family: Arial, sans-serif;
 }
 
 h3 {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 #instructions {
