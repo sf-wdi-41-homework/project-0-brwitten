@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: white;
 }
 
 h3 {
@@ -7,6 +8,10 @@ h3 {
   text-align: center;
   letter-spacing: 2px;
   font-weight: bold;
+}
+
+.jumbotron {
+  border-bottom: 2px solid #4b4f4f;
 }
 
 #instructions {
@@ -26,6 +31,7 @@ h3 {
   border: 2px solid #4b4f4f;
   margin-left: 5%;
   margin-right: 5%;
+  background: linear-gradient(to right, #9ebfe5, #f76a6a);
 }
 
 .flag {
