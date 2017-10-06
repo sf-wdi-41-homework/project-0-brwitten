@@ -17,7 +17,7 @@ $(document).ready(function(){
 // code to move pieces with the return and D keypress
   $(document).on('keypress', function(event) {
   // code to move the top object -- car1
-    if (event.keyCode == 13 && car1x < 280 && car2x < 280) { // this is the return key and making sure not end of track
+    if (event.keyCode == 107 && car1x < 280 && car2x < 280) { // this is K and making sure not end of track
       ctx.clearRect(0,0,800,500);
       car1x = car1x+5;
       car1 = ctx.fillRect(car1x,car1y,20,40);
