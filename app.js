@@ -12,14 +12,14 @@ $(document).ready(function(){
   var car2 = ctx.fillRect(10,90,20,40);
   var car2x = 10;
   var car2y = 90;
+  var car1finishTime = []; // using arrays because event timestamp for finish keeps updating
+  var car2finishTime = [];
 
 // move pieces with the return and D keypress
 
   $(document).on('keypress', function(event) {
-
   // code to move the top object -- car1
-    if (event.keyCode == 13) { // this is return
-      console.log("you pressed a key!");
+    if (event.keyCode == 13 && car1x < 280 && car2x < 280) { // this is the return key and making sure not end of track
       ctx.clearRect(0,0,800,500);
       car1x = car1x+5;
       car1 = ctx.fillRect(car1x,car1y,20,40);
@@ -27,23 +27,32 @@ $(document).ready(function(){
     };
 
   // code to move the bottom object -- car 2
-    if (event.keyCode == 100) { // this is D
-      console.log("you pressed a different key!");
+    if (event.keyCode == 100 && car2x < 280 && car2x < 280) { // this is D and making sure not end of track
       ctx.clearRect(0,0,800,500);
       car2x = car2x+5;
       car2 = ctx.fillRect(car1x,car1y,20,40);
       car1 = ctx.fillRect(car2x,car2y,20,40);
     };
-    console.log(car2x);
-    if (car2x == 280) {
-      alert("bottom car wins!");
-    }
-    if (car1x == 280) {
+
+// Determine winner and if there was a tie
+    if (car1x === 280 && car2x != 280) {
       alert("top car wins!");
+      car1finishTime.push(event.timeStamp);
+      };
+    if (car2x === 280 && car1x != 280) {
+      alert("bottom car wins!");
+      car2finishTime.push(event.timeStamp);
+    };
+    if (car1x === 280 && car2x === 280) {
+      if (car1finishTime[0] > car2finishTime[0]) {
+        alert("top car wins!");
+      } else {
+        alert("bottom car wins!");
+      }
     }
   });
 
-// need to determine winning position
+
 
 // need to determine tie position
 
