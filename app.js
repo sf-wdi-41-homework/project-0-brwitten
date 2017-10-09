@@ -9,7 +9,7 @@ $(document).ready(function(){
   var car2 = ctx.fillRect(10,90,20,40);
   var car2x = 10;
   var car2y = 90;
-// using arrays because event timestamp for finish keeps updating; should eventually fix
+// using arrays because event timestamp for finish keeps updating; should eventually fix this issue
   var car1finishTime = [];
   var car2finishTime = [];
 

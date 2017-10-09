@@ -43,11 +43,11 @@ a:link {
 
 .flag {
   margin-right: 1px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 #resetButton {
-  margin-top: 5px;
+  margin-top: 1px;
   margin-bottom: 20px;
   margin-left: 45%;
   margin-right: 45%;
