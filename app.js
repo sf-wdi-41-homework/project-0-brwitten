@@ -32,7 +32,7 @@ $(document).ready(function(){
       car1 = ctx.fillRect(car2x,car2y,20,40);
     };
 
-// code to determine winner and if there was a tie
+// code to determine winner
     if (car1x === 280 && car2x != 280) {
       alert("Top car wins! Hit Reset to play again.");
       car1finishTime.push(event.timeStamp);
@@ -41,6 +41,7 @@ $(document).ready(function(){
       alert("Bottom car wins! Hit Reset to play again.");
       car2finishTime.push(event.timeStamp);
     };
+  // code to handle the tie case; using the event time stamps logged above
     if (car1x === 280 && car2x === 280) {
       if (car1finishTime[0] > car2finishTime[0]) {
         alert("Top car wins! Hit Reset to play again.");
